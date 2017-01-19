@@ -15,6 +15,12 @@ padding-right: 65px;
 }
 
 @mixin atMedium{
+
+&__b-margin-until-medium{
+	margin-bottom: 0;
+}
+
+
 &__medium-4 {
 	float: left;
 	width: 33.33%;
@@ -32,4 +38,9 @@ padding-right: 65px;
 width: 63%;
 }
 }
+
+&__b-margin-until-medium{
+margin-bottom: 1rem;
+}
+
 }
