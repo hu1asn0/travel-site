@@ -12,16 +12,30 @@
 </head>
 
 <body>
-   <header>
-      <img src="assets/images/icons/clear-view-escapes.svg">
-      <a href="#" class="btn">Get in Touch</a>
-      <nav>
+   <header class="site-header">
+      <div class="wrapper">
+      <div class="site-header__logo">
+      <div class="site-header__logo_graphic icon icon--clear-view-escapes">
+      Clear View Escapes</div>
+   </div>
+
+   <div class="site-header__menu-icon">
+    <div class="site-header__menu-icon__middle"></div>
+   </div>
+
+   <div class="site-header__menu-content">
+      <div class="site-header__btn-container">
+      <a href="#" class="btn btn-container">Get in Touch</a>
+      </div>
+      <nav class="primary-nav primary-nav--pull-right">
          <ul>
           <li><a href="#our-beginning">Our Beginning</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
        </ul>
     </nav>
+    </div>
+   </div>
  </header>
 
  <div class="large-hero">
@@ -36,7 +50,7 @@
                 <h1 class="large-hero__title">Your clarity.</h1>
                 <h2 class="large-hero__sub-title">One trip away.</h2>
                 <p class="large-hero__description">We create soul restoring journeys that inspire you to be you.</p>
-                <p><a href="#" class="btn btn--orange btn--large">Get Started YESTERDAY</a></p>
+                <p><a href="#" class="btn btn--orange btn--large">Get Started TODAY</a></p>
              </div>
           </div>
        </div>
@@ -49,10 +63,10 @@
              <img sizes="(min-width: 970px), 100vw" srcset="assets/images/first-trip-low-res.jpg 565w, assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi.jpg 1952w" alt="Couple walking down a street." >
           </div>
           <div class="row row--gutters">
-            <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
+            <div class="row__large-4 row__large-4--larger row__b-margin-until-medium">
                <picture>
                   <source sizes="404px" srcset="/assets/images/our-start.jpg 404w, /assets/images/our-start-hi-dpi.jpg 808w" media="(min-width: 1020px)">
-                   <source sizes="382px " srcset="/assets/images/our-start-portrait.jpg 382w, /assets/images/our-start-portrait-hi-dpi.jpg 764w" media="(min-width: 80px)">
+                   <source sizes="382px" srcset="/assets/images/our-start-portrait.jpg 382w, /assets/images/our-start-portrait-hi-dpi.jpg 764w" media="(min-width: 800px)">
                    <img srcset="/assets/images/our-start-landscape.jpg 800w, /assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Our founder, Jane Doe">    
                 </picture>
              </div>
@@ -130,7 +144,7 @@
    <div class="row__large-4">
    <div class="testimonial">
    <div class="testimonial__photo">
-    <img sizes="160px" srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi 320w.jpg">
+    <img sizes="160px" srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w">
     </div>
     <h3 class="testimonial__title">John Smith</h3>
     <h4 class="testimonial__subtitle">4 Time Escaper</h4>
@@ -160,6 +174,7 @@
    </div>
       
    </footer>
+<script src="/temp/scripts/App.js"></script>
 </body>
 
 </html>
