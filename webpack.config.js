@@ -1,10 +1,13 @@
 module.exports = {
-entry: "./app/assets/scripts/app.js",
+entry: {
+	App: "./app/assets/scripts/app.js",
+	Vendor: "./app/assets/scripts/Vendor.js"
+},
 //entry: "./app/temp/waypoints.js",
 output: {
 	path: "./app/temp/scripts",
 //	path: "./app/temp",
-	filename: "App.js"	
+	filename: "[name].js"	
 //	filename: "app_wp.js"
 		},
 module: { /*object definition*/

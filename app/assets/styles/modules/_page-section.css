@@ -22,8 +22,10 @@ padding-bottom: 4.5rem;
 	background-color: #E0E6EF;
 
 @mixin atLarge {
+	&.lazyloaded {
 	background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
 	background-size: cover;
+	}
 
 }
 }
