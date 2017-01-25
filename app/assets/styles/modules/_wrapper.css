@@ -30,9 +30,18 @@ margin-bottom: 3.875rem;
 	max-width: 976px;
 }
 
+&--narrow{
+width: 95%;
+
+@mixin atSmall{
+	width: 470px;
+	}
+
+}
 .wrapper{
 padding-left: 0;
 padding-right: 0;
 }
+
 
 }
