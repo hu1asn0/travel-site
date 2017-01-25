@@ -2,8 +2,8 @@ var gulp = require('gulp'),
 watch = require('gulp-watch'),
 browserSync = require('browser-sync').create();
 
-/* DEFINITON OF wathc TASK */
-gulp.task('watch', function(){
+/* DEFINITON OF watch_wp TASK */
+gulp.task('watch_wp', function(){
 
 /* INITALIZE browserSync*/
 browserSync.init({
@@ -19,26 +19,25 @@ browserSync.reload();
 });
 
 /* WATCH ALL CSS CHANGES AND INJECT WITH HOTLOAD*/
-watch('./app/assets/styles/**/*.css', function(){
-gulp.start('cssInject');	
+watch('./app/temp/**/*.css', function(){
+gulp.start('cssInject_wp');	
 });
 
 /* WATCH ALL JavaScript CHANGES AND RELOAD*/
-watch('./app/assets/scripts/**/*.js', function(){
-gulp.start('scriptsRefresh');
+watch('./app/temp/waypoints.js', function(){
+gulp.start('scriptsRefresh_wp');
 browserSync.reload();
 });
 
 });
 
 /*INJECT styles.css AFTER styles.js RAN*/
-gulp.task('cssInject',['styles'], function(){
-return gulp.src('./app/temp/styles/styles.css')
+gulp.task('cssInject_wp', function(){
+return gulp.src('./app/temp/waypoints.css')
 .pipe(browserSync.stream());
-
-});
-
-/* RELOAD PAGE AFTER scripts.js RAN*/
-gulp.task('scriptsRefresh', ['scripts'], function(){
-browserSync.reload();
 })
+
+/*RELOAD PAGE AFTER scripts.js RAN*/
+gulp.task('scriptsRefresh_wp', ['scripts'], function(){
+browserSync.reload();
+});
