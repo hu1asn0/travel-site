@@ -68,10 +68,24 @@ margin-bottom: 1rem;
 }
 
 /*Begin equal Height Rules*/
-&-equal-height-large{
+.flexbox &-equal-height-medium{
+@mixin atMedium{
+display: flex;
+}
+
+& > div{
+	float: none;
+	display: flex;
+}
+
+}
+
+.flexbox &-equal-height-large{
+
 @mixin atLarge{
 display: flex;
 }
+
 & > div{
 	float: none;
 	display: flex;

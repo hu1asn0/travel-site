@@ -6,6 +6,7 @@ this.openModalButton = $(".open-modal");
 this.modal = $(".modal");
 this.closeModalButton =$(".modal__close");
 this.events();
+console.log("Modal loaded");
 }
 
 events(){
@@ -31,7 +32,6 @@ return false; //disables the href="#"
 
 closeModal(){
 this.modal.removeClass("modal--is-visible");
-
 }
 
 }

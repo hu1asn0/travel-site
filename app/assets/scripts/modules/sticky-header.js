@@ -15,9 +15,9 @@ this.addSmoothScrolling();
 this.refreshWaypoints();
 }
 
-refreshWaypoints{
-this.lazyImages.load(function(){
-Waypoint.refreshAll(); //This si a GLOBAL refresh to the waypoints, not only for those in this file. 
+refreshWaypoints(){
+this.lazyImages.on('load', function(){  // USE on.('load', function...etc) instead of load
+Waypoint.refreshAll(); //This is a GLOBAL refresh to the waypoints, not only for those in this file. 
 });
 }
 
@@ -30,7 +30,7 @@ createHeaderWaypoint(){
 	new Waypoint({
 		element: this.headerTriggerElement[0], //the 1st element in a jQuery type array object is always the DOM element pointer
 		handler: function(direction){
-		if(direction== "down"){
+		if(direction == "down"){
 		that.siteHeader.addClass("site-header--dark");
 		} else
 		{
